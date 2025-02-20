@@ -1,0 +1,61 @@
+.content-stage-3 .section1-3 input.form-control {
+  border: none;
+  background: transparent;
+}
+
+.content-stage-3 .section1-3 .form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.content-stage-3 .section1-3 {
+  max-height: 270px;
+  overflow-x: auto;
+}
+
+.content-stage-3 .section1-3 table thead #thead {
+  background-image: linear-gradient(to bottom, #008a17, #23672e);
+  border-top: 0px solid black;
+}
+
+.content-stage-3 .section1-3 table thead #thead th {
+  background: transparent;
+  color: white;
+  font-weight: 500;
+}
+
+.content-stage-3 .section1-3 table tbody #porcentagem input,
+.content-stage-3 .section1-3 table thead #thead th {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section2_3 {
+    flex-direction: column;
+  }
+
+  .section2_3 .estado-civil {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-bottom: 1rem;
+  }
+
+  .section2_3 .estado-civil #label {
+    font-size: 16px;
+  }
+
+  .section2_3 .estado-civil .options {
+    width: 100% !important;
+  }
+
+  .section2_3 #fila-esquerda,
+  .section2_3 #fila-direita {
+    width: 100%;
+  }
+
+  .section2_3 #fila-direita div {
+    width: 100% !important;
+  }
+}

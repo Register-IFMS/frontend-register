@@ -1,0 +1,193 @@
+body {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+#inputGroupSelect03:focus {
+  border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.navbar {
+  background-color: #f0eff4;
+  border-bottom: 2px solid rgba(16, 55, 22, 0.26);
+}
+
+.navbar a,
+button.navbar-brand.btn.btn-outline-success.d-flex.align-items-center.gap-2 {
+  color: black;
+  margin-left: 1rem;
+  border-radius: 3px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar a:hover,
+button.navbar-brand.btn.btn-outline-success.d-flex.align-items-center.gap-2:hover {
+  color: #fff;
+  background-image: linear-gradient(to bottom, #23672e, #008a17);
+}
+
+.navbar a:focus,
+button.navbar-brand.btn.btn-outline-success.d-flex.align-items-center.gap-2:focus {
+  color: #fff;
+  border-color: #008a17 !important;
+  background-image: radial-gradient(#008a17, #23672e);
+  box-shadow: 0 0 0 0.25rem rgba(0, 138, 23, 0.3) !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding-top: 60px;
+  background-color: #f0eff4;
+  border-right: 2px solid rgba(16, 55, 22, 0.26);
+}
+
+.progress-container {
+  position: relative;
+  top: 100px;
+  left: -96px;
+  rotate: 90deg;
+}
+
+.progress-bar-bg {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  width: 66%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.27);
+  z-index: 1;
+}
+
+.content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 89vh;
+  margin-left: 250px;
+  margin-top: 56px;
+  padding: 20px 0px 20px 0px;
+  background-color: #f0eff4;
+}
+
+#label {
+  font-size: 16px;
+}
+
+.btn-stage {
+  border-color: #008a17 !important;
+  background-image: linear-gradient(to bottom, #008a17, #23672e);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    transform 0.1s ease-in-out;
+  transform: scale(1);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.btn-stage:hover {
+  border-color: #008a17 !important;
+  background-image: linear-gradient(to bottom, #00ab1e 2%, #23672e);
+  transform: scale(1.05);
+}
+
+.btn-stage:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 138, 23, 0.3);
+}
+
+@media only screen and (max-width: 1340px) {
+  #label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    position: relative;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    border-bottom: 2px solid rgba(16, 55, 22, 0.26);
+  }
+
+  .progress-container {
+    position: relative;
+    top: 22px;
+    rotate: 0deg;
+    left: 0;
+  }
+
+  .progress-bar-bg {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    width: 72%;
+  }
+
+  .sidebar ul {
+    padding: 5px 2rem 5px 2rem !important;
+  }
+
+  .sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-top: 0;
+    max-height: 81vh;
+  }
+
+  #label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .sidebar ul li span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 738px) {
+  body {
+    font-size: 15px;
+  }
+
+  .content {
+    max-height: 79vh;
+  }
+
+  .navbar a,
+  .section5 button,
+  .section1_3 button {
+    font-size: 12px !important;
+  }
+
+  .navbar a svg,
+  .section5 button svg,
+  .section1_3 button svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .sidebar ul {
+    padding: 5px 1rem 5px 24px !important;
+  }
+
+  .sidebar ul li span {
+    font-size: 11px;
+  }
+
+  #label {
+    font-size: 14px;
+  }
+}
